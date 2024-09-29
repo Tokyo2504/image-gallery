@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-block-size: 100vh;
+  font-family: "Permanent Marker", cursive;
+  color: #fff;
+  background: #0F2027;
+  background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  margin-block: 20px;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 40px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+input[type="search"] {
+  appearance: none;
+  inline-size: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  cursor: pointer;
+}
+
+input::placeholder {
+  font-size: 17px;
+}
+
+.search-form__button {
+  padding: 10px;
+  border: none;
+  background-color: #ffffff;
+  font-family: inherit;
+  color: #0F2027;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.search-form__button:hover {
+  background-color: #0F2027;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card__img {
+  display: block;
+  inline-size: 350px;
+  block-size: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.footer {
+  margin-block-start: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-block-size: 60px;
+}
+
+.footer__icon {
+  display: inline-block;
+  inline-size: 40px;
+  block-size: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer__icon:hover {
+  transform: scale(1.2);
+}
